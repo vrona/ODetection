@@ -1,0 +1,32 @@
+# Debris 2020 dataset http://cocodataset.org - first 9178 * 75% training, 15% validation, 10% testing images
+# Train command: python train.py --data debris.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /debris
+#
+#       /images
+#         /train
+#         /valid
+#         /test
+#       
+#       /labels
+#         /train
+#         /valid
+#         /test
+#
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: https://github.com/vrona/XXX.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../debris/images/train/  # 6883 images
+val: ../debris/images/train/  # 1377 images
+test: ../debris/images/test/ # 919 images
+
+# number of classes
+nc: 3
+
+# class names
+names: ["carbon_L", "carbon_M", "carbon_S"]
