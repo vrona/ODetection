@@ -21,12 +21,12 @@
 # download: https://github.com/vrona/XXX.zip
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: ../debris/images/train/  # 6883 images
-val: ../debris/images/train/  # 1377 images
-test: ../debris/images/test/ # 919 images
+train: ../datasets/images/train/  # 11934 images
+val: ../datasets/images/valid/  # 1491 images
+test: ../datasets/images/test/ # 1493 images
 
 # number of classes
 nc: 3
 
 # class names
-names: ["carbon_L", "carbon_M", "carbon_S"]
+names: ["medium_D", "small_D", "large_D"]
