@@ -1,0 +1,40 @@
+# Debris 2020 dataset http://cocodataset.org - first 9178 * 75% training, 15% validation, 10% testing images
+# Train command: python train.py --data debris.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /debris
+#
+#       /images
+#         /train
+#         /valid
+#         /test
+#       
+#       /labels
+#         /train
+#         /valid
+#         /test
+#
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: https://github.com/vrona/XXX.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../datasets/images/train/  # 32 383 images
+val: ../datasets/images/valid/  # 6 450 images
+test: ../datasets/images/test/ # 4 320 images
+
+# number of classes
+nc: 77
+
+# class names
+names: ['medium_D', 'small_D', 'large_D', 'pilot_standing', 'pilot_walking', 'pilot_racing', 'pilot_falling',
+        'pilot_sliding', 'pilot_injured', 'marshall', 'team_crew', 'spectator', 'helmet_full', 'helmet_open',
+        'helmet_fullX', 'safety_car', 'moto_gp', 'moto_x', 'F1', 'F2', 'F3', 'F4', 'FE', 'Indy', 'LMP', 'GT',
+        'wtcr', 'wrc', 'wrx', 'wtcr', 'rraid_Dakar', 'rraid_Baja', 'rraid_XE', 'nascar', 'sprint_car',
+        'green_flag', 'yellow_flag', 'red_flag', 'redyellow_F', 'blue_flag', 'black_flag', 'blackwhite_F',
+        'chequered_F', 'green_lights', 'red_lights', 'tarmac', 'gravel', 'brakD_S_50', 'brakD_S_100',
+        'brakD_S_150', 'apex', 'kerbs', 'lane', 'lines', 'start_fin_line', 'conc_wall', 'chocabs_wall',
+        'fencing', 'run_off', 'grass', 'cones', 'smock', 'oil', 'mud', 'sand', 'snow_ice', 'hole', 'jump',
+        'barrier_tape', 'wall', 'dune', 'tree', 'stone', 'barrier', 'house', 'car', 'lollipop']
