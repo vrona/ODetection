@@ -1,0 +1,401 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    bounding_box/class_labels:
+      Bounding Box Debugger/Images_wandb_delimeter_predictions:
+        key: Bounding Box Debugger/Images_wandb_delimeter_predictions
+        type: bounding_box/class_labels
+        value:
+          '0': medium_D
+          '1': small_D
+          '10': team_crew
+          '11': spectator
+          '12': helmet_full
+          '13': helmet_open
+          '14': helmet_fullX
+          '15': safety_car
+          '16': moto_gp
+          '17': moto_x
+          '18': F1
+          '19': F2
+          '2': large_D
+          '20': F3
+          '21': F4
+          '22': FE
+          '23': Indy
+          '24': LMP
+          '25': GT
+          '26': wtcr
+          '27': wrc
+          '28': wrx
+          '29': wtcr
+          '3': pilot_standing
+          '30': rraid_Dakar
+          '31': rraid_Baja
+          '32': rraid_XE
+          '33': nascar
+          '34': sprint_car
+          '35': green_flag
+          '36': yellow_flag
+          '37': red_flag
+          '38': redyellow_F
+          '39': blue_flag
+          '4': pilot_walking
+          '40': black_flag
+          '41': blackwhite_F
+          '42': chequered_F
+          '43': green_lights
+          '44': red_lights
+          '45': tarmac
+          '46': gravel
+          '47': brakD_S_50
+          '48': brakD_S_100
+          '49': brakD_S_150
+          '5': pilot_racing
+          '50': apex
+          '51': kerbs
+          '52': lane
+          '53': lines
+          '54': start_fin_line
+          '55': conc_wall
+          '56': chocabs_wall
+          '57': fencing
+          '58': run_off
+          '59': grass
+          '6': pilot_falling
+          '60': cones
+          '61': smock
+          '62': oil
+          '63': mud
+          '64': sand
+          '65': snow_ice
+          '66': hole
+          '67': jump
+          '68': barrier_tape
+          '69': wall
+          '7': pilot_sliding
+          '70': dune
+          '71': tree
+          '72': stone
+          '73': barrier
+          '74': house
+          '75': car
+          '76': lollipop
+          '8': pilot_injured
+          '9': marshall
+    cli_version: 0.10.26
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.6
+    t:
+      1:
+      - 1
+      2:
+      - 1
+      3:
+      - 2
+      4: 3.7.6
+      5: 0.10.26
+      8:
+      - 5
+adam:
+  desc: null
+  value: false
+artifact_alias:
+  desc: null
+  value: latest
+batch_size:
+  desc: null
+  value: 32
+bbox_interval:
+  desc: null
+  value: -1
+bucket:
+  desc: null
+  value: ''
+cache_images:
+  desc: null
+  value: false
+cfg:
+  desc: null
+  value: ./models/yolov5s.yaml
+data:
+  desc: null
+  value: data/mospo.yaml
+data_dict:
+  desc: null
+  value:
+    names:
+    - medium_D
+    - small_D
+    - large_D
+    - pilot_standing
+    - pilot_walking
+    - pilot_racing
+    - pilot_falling
+    - pilot_sliding
+    - pilot_injured
+    - marshall
+    - team_crew
+    - spectator
+    - helmet_full
+    - helmet_open
+    - helmet_fullX
+    - safety_car
+    - moto_gp
+    - moto_x
+    - F1
+    - F2
+    - F3
+    - F4
+    - FE
+    - Indy
+    - LMP
+    - GT
+    - wtcr
+    - wrc
+    - wrx
+    - wtcr
+    - rraid_Dakar
+    - rraid_Baja
+    - rraid_XE
+    - nascar
+    - sprint_car
+    - green_flag
+    - yellow_flag
+    - red_flag
+    - redyellow_F
+    - blue_flag
+    - black_flag
+    - blackwhite_F
+    - chequered_F
+    - green_lights
+    - red_lights
+    - tarmac
+    - gravel
+    - brakD_S_50
+    - brakD_S_100
+    - brakD_S_150
+    - apex
+    - kerbs
+    - lane
+    - lines
+    - start_fin_line
+    - conc_wall
+    - chocabs_wall
+    - fencing
+    - run_off
+    - grass
+    - cones
+    - smock
+    - oil
+    - mud
+    - sand
+    - snow_ice
+    - hole
+    - jump
+    - barrier_tape
+    - wall
+    - dune
+    - tree
+    - stone
+    - barrier
+    - house
+    - car
+    - lollipop
+    nc: 77
+    test: ../datasets/images/test/
+    train: ../datasets/images/train/
+    val: ../datasets/images/valid/
+device:
+  desc: null
+  value: ''
+entity:
+  desc: null
+  value: null
+epochs:
+  desc: null
+  value: 132
+evolve:
+  desc: null
+  value: false
+exist_ok:
+  desc: null
+  value: false
+global_rank:
+  desc: null
+  value: -1
+hyp:
+  desc: null
+  value:
+    anchor_t: 4.0
+    box: 0.05
+    cls: 0.5
+    cls_pw: 1.0
+    degrees: 0.0
+    fl_gamma: 0.0
+    fliplr: 0.5
+    flipud: 0.0
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    iou_t: 0.2
+    lr0: 0.01
+    lrf: 0.2
+    mixup: 0.0
+    momentum: 0.937
+    mosaic: 1.0
+    obj: 1.0
+    obj_pw: 1.0
+    perspective: 0.0
+    scale: 0.5
+    shear: 0.0
+    translate: 0.1
+    warmup_bias_lr: 0.1
+    warmup_epochs: 3.0
+    warmup_momentum: 0.8
+    weight_decay: 0.0005
+image_weights:
+  desc: null
+  value: false
+img_size:
+  desc: null
+  value:
+  - 640
+  - 640
+label_smoothing:
+  desc: null
+  value: 0.0
+linear_lr:
+  desc: null
+  value: false
+local_rank:
+  desc: null
+  value: -1
+multi_scale:
+  desc: null
+  value: false
+name:
+  desc: null
+  value: exp
+noautoanchor:
+  desc: null
+  value: false
+nosave:
+  desc: null
+  value: true
+notest:
+  desc: null
+  value: false
+opt:
+  desc: null
+  value:
+    adam: false
+    artifact_alias: latest
+    batch_size: 32
+    bbox_interval: -1
+    bucket: ''
+    cache_images: false
+    cfg: ./models/yolov5s.yaml
+    data: data/mospo.yaml
+    device: ''
+    entity: null
+    epochs: 132
+    evolve: false
+    exist_ok: false
+    global_rank: -1
+    hyp:
+      anchor_t: 4.0
+      box: 0.05
+      cls: 0.5
+      cls_pw: 1.0
+      degrees: 0.0
+      fl_gamma: 0.0
+      fliplr: 0.5
+      flipud: 0.0
+      hsv_h: 0.015
+      hsv_s: 0.7
+      hsv_v: 0.4
+      iou_t: 0.2
+      lr0: 0.01
+      lrf: 0.2
+      mixup: 0.0
+      momentum: 0.937
+      mosaic: 1.0
+      obj: 1.0
+      obj_pw: 1.0
+      perspective: 0.0
+      scale: 0.5
+      shear: 0.0
+      translate: 0.1
+      warmup_bias_lr: 0.1
+      warmup_epochs: 3.0
+      warmup_momentum: 0.8
+      weight_decay: 0.0005
+    image_weights: false
+    img_size:
+    - 640
+    - 640
+    label_smoothing: 0.0
+    linear_lr: false
+    local_rank: -1
+    multi_scale: false
+    name: exp
+    noautoanchor: false
+    nosave: true
+    notest: false
+    project: runs/train
+    quad: false
+    rect: false
+    resume: false
+    save_dir: runs/train/exp2
+    save_period: -1
+    single_cls: false
+    sync_bn: false
+    total_batch_size: 32
+    upload_dataset: false
+    weights: yolov5s.pt
+    workers: 8
+    world_size: 1
+project:
+  desc: null
+  value: runs/train
+quad:
+  desc: null
+  value: false
+rect:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+save_dir:
+  desc: null
+  value: runs/train/exp2
+save_period:
+  desc: null
+  value: -1
+single_cls:
+  desc: null
+  value: false
+sync_bn:
+  desc: null
+  value: false
+total_batch_size:
+  desc: null
+  value: 32
+upload_dataset:
+  desc: null
+  value: false
+weights:
+  desc: null
+  value: yolov5s.pt
+workers:
+  desc: null
+  value: 8
+world_size:
+  desc: null
+  value: 1

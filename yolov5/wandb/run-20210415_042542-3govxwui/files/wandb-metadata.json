@@ -1,0 +1,38 @@
+{
+    "os": "Linux-5.4.0-1043-aws-x86_64-with-glibc2.10",
+    "python": "3.8.0",
+    "heartbeatAt": "2021-04-15T04:25:43.686213",
+    "startedAt": "2021-04-15T04:25:42.738278",
+    "docker": null,
+    "gpu": "Tesla V100-SXM2-16GB",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "10.0.130",
+    "args": [
+        "--img",
+        "960",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "data/mospo.yaml",
+        "--cfg",
+        "yolov5s.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--nosave"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "yolov5/train.py",
+    "git": {
+        "remote": "https://github.com/vrona/ODetection.git",
+        "commit": "f30d6c676f8ad981d1abad00dcc177e000a6c606"
+    },
+    "email": "mikehatchi@github.com",
+    "root": "/home/ubuntu/ODetection",
+    "host": "ip-172-31-28-33",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/odetect/bin/python"
+}
